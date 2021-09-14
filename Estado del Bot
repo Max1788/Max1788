@@ -1,0 +1,13 @@
+client.on('ready', () => {
+  function presence() {
+    client.user.setPresence({
+      status: ' on,dnd,idle ',
+      activity: {
+        name: ' Estado que le quieren poner ',
+        type: ' WATCHING,PLAYING,LISTENING,STREAMING '
+      }
+    })
+  }
+  presence();
+  console.log(` Aqui ponen lo que quieren que les aparesca en la consola. `)
+})
