@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('message', (message) =>{
 
-  let prefix = ' aqui pon tu prefix'
+  let prefix = ' aqui pon tu prefix '
 
   if(message.author.bot) return;
 
